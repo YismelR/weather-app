@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
@@ -12,13 +11,23 @@ import dropdownIcon from "../assets/images/icon-dropdown.svg";
 import { useState } from "react";
 
 export default function UnitsSwitch() {
-  const [showStatusBar, setShowStatusBar] = useState(true);
-  const [showActivityBar, setShowActivityBar] = useState(false);
-  const [showPanel, setShowPanel] = useState(false);
+  const [showCelcius, setCelcius] = useState(true);
+  const [showFarenheit, setFarenheit] = useState(false);
+  const [showKm, setKm] = useState(false);
+  const [showMph, setMph] = useState(false);
+  const [showMili, setMili] = useState(false);
+  const [showInches, setInches] = useState(false);
 
+  function changeColor(colorBg: any) {
+    let color = "";
+    if (colorBg) {
+      color = "bg-Neutral-600";
+    }
+    return color;
+  }
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className="flex gap-2 px-3 py-2 bg-card-bg rounded-lg">
+      <DropdownMenuTrigger className=" flex gap-2 px-3 py-2 bg-card-bg rounded-lg focus:outline-0">
         <img src={settingIcon} />
         <p>Units</p>
         <img src={dropdownIcon} />
@@ -28,25 +37,58 @@ export default function UnitsSwitch() {
         align="end"
       >
         <DropdownMenuLabel>Switch to Imperial</DropdownMenuLabel>
-        <DropdownMenuSeparator />
+        <DropdownMenuLabel className="text-Neutral-300 text-xs">
+          Temperature
+        </DropdownMenuLabel>
         <DropdownMenuCheckboxItem
-          checked={showStatusBar}
-          onCheckedChange={setShowStatusBar}
+          checked={showCelcius}
+          onCheckedChange={setCelcius}
+          className={changeColor(showCelcius)}
         >
-          Status Bar
+          Celsius (°C)
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem
-          checked={showActivityBar}
-          onCheckedChange={setShowActivityBar}
-          disabled
+          checked={showFarenheit}
+          onCheckedChange={setFarenheit}
+          className={changeColor(showFarenheit)}
         >
-          Activity Bar
+          Fahrenheit (°F)
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuSeparator className="bg-Neutral-600" />
+        <DropdownMenuLabel className="text-Neutral-300 text-xs">
+          Wind Speed
+        </DropdownMenuLabel>
+        <DropdownMenuCheckboxItem
+          checked={showKm}
+          onCheckedChange={setKm}
+          className={changeColor(showKm)}
+        >
+          Km/h
         </DropdownMenuCheckboxItem>
         <DropdownMenuCheckboxItem
-          checked={showPanel}
-          onCheckedChange={setShowPanel}
+          checked={showMph}
+          onCheckedChange={setMph}
+          className={changeColor(showMph)}
         >
-          Panel
+          mph
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuSeparator className="bg-Neutral-600" />
+        <DropdownMenuLabel className="text-Neutral-300 text-xs">
+          Precipitation
+        </DropdownMenuLabel>
+        <DropdownMenuCheckboxItem
+          checked={showMili}
+          onCheckedChange={setMili}
+          className={changeColor(showMili)}
+        >
+          Milimeters (mm)
+        </DropdownMenuCheckboxItem>
+        <DropdownMenuCheckboxItem
+          checked={showInches}
+          onCheckedChange={setInches}
+          className={changeColor(showInches)}
+        >
+          Inches (in)
         </DropdownMenuCheckboxItem>
       </DropdownMenuContent>
     </DropdownMenu>
