@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/*makes sizing simpler*/
+*,
+*::before,
+::after {
+  box-sizing: inherit;
+}
+* {
+  font: inherit;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+input {
+  border: 0;
+  outline: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+html {
+  box-sizing: border-box;
+}
+
+@theme {
+  /*colors*/
+  --color-background: hsl(243, 96%, 9%);
+  --color-card-bg: hsl(243, 27%, 20%);
+  --color-Neutral-700: hsl(243, 23%, 24%);
+  --color-Neutral-600: hsl(243, 23%, 30%);
+  --color-Neutral-300: hsl(240, 6%, 70%);
+  --color-Neutral-200: hsl(250, 6%, 84%);
+  --color-Neutral-0: hsl(0, 0%, 100%);
+
+  --color-Orange-500: hsl(28, 100%, 52%);
+
+  --color-Blue--500: hsl(233, 67%, 56%);
+  --color-Blue-700: hsl(248, 70%, 36%);
+
+  /*font*/
+  --font-bricolage-grotesque: "Bricolage Grotesque";
+  --font-DM-Sans: "DM Sans";
+  --radius: 0.625rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  background-color: var(--color-background);
+  font-family: var(--font-DM-Sans), sans-serif, Arial, Helvetica;
+  font-size: 24px;
+  color: aliceblue;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+#root {
+  width: 100%;
+}
