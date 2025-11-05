@@ -12,7 +12,6 @@
 * {
   font: inherit;
   box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
 }
 img,
 picture,
@@ -110,7 +109,7 @@ body {
   place-items: center;
   background-color: var(--color-background);
   font-family: var(--font-DM-Sans), sans-serif, Arial, Helvetica;
-  font-size: 24px;
+  font-size: 18px;
   color: aliceblue;
   line-height: 1.6;
   font-size: 16px;
