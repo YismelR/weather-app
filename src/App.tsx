@@ -3,7 +3,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="my-12 mx-24">
+    <div className="flex flex-col gap-8 my-12 px-12 min-w-5xl">
       <Header />
       <Body />
     </div>

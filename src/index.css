@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 @import "tailwindcss";
-@import "tw-animate-css";
 
 /*makes sizing simpler*/
 *,
@@ -10,7 +9,6 @@
   box-sizing: inherit;
 }
 * {
-  font: inherit;
   box-sizing: border-box;
 }
 img,
@@ -28,15 +26,6 @@ input {
 a {
   text-decoration: none;
   color: inherit;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: normal;
-  margin-bottom: 1rem;
 }
 button {
   border: none;
@@ -63,7 +52,7 @@ html {
 
   --color-Orange-500: hsl(28, 100%, 52%);
 
-  --color-Blue--500: hsl(233, 67%, 56%);
+  --color-Blue-500: hsl(233, 67%, 56%);
   --color-Blue-700: hsl(248, 70%, 36%);
 
   /*font*/
@@ -109,12 +98,17 @@ body {
   place-items: center;
   background-color: var(--color-background);
   font-family: var(--font-DM-Sans), sans-serif, Arial, Helvetica;
-  /* font-size: 18px; */
   color: aliceblue;
   line-height: 1.6;
-  font-size: 16px;
+  /* font-size: 16px; */
 }
 
 #root {
+  display: flex;
+  justify-content: center;
   width: 100%;
+}
+
+h1 {
+  font-family: var(--font-bricolage-grotesque);
 }
