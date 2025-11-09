@@ -1,9 +1,9 @@
-import HourlySection from "./HourlySection";
-import OverallDisplay from "./OverallDisplay";
+import HourlySection from "./hourlySection/HourlySection";
+import OverallDisplay from "./overallDisplay/OverallDisplay";
 
 export default function WeatherDisplay() {
   return (
-    <section className="flex gap-2 w-full">
+    <section className="grid grid-cols-3 gap-4 w-full">
       <OverallDisplay />
       <HourlySection />
     </section>

@@ -33,7 +33,7 @@ export default function UnitsSwitch() {
         <img src={dropdownIcon} />
       </DropdownMenuTrigger>
       <DropdownMenuContent
-        className="w-auto p-2 bg-card-bg border-0"
+        className="w-auto p-2 bg-card-bg border-Neutral-600"
         align="end"
       >
         <DropdownMenuLabel>Switch to Imperial</DropdownMenuLabel>

@@ -1,10 +1,10 @@
-import weatherBG from "../assets/images/bg-today-large.svg";
-import timeZone from "../assets/images/icon-sunny.webp";
+import weatherBG from "../../assets/images/bg-today-large.svg";
+import timeZone from "../../assets/images/icon-sunny.webp";
 export default function CurrentWeather() {
   return (
-    <section className="grid">
+    <section className="grid w-full h-full">
       <div
-        className="flex justify-between w-fit h-full bg-cover bg-no-repeat "
+        className="flex justify-between place-items-center w-full h-full bg-cover bg-no-repeat "
         style={{ backgroundImage: `url(${weatherBG})` }}
       >
         <div className="flex flex-col">
