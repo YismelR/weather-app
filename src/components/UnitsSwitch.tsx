@@ -27,13 +27,13 @@ export default function UnitsSwitch() {
   }
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className=" flex gap-2 px-3 py-2 bg-card-bg rounded-lg focus:outline-0">
+      <DropdownMenuTrigger className=" flex lg:gap-2 lg:px-3 lg:py-2 bg-card-bg rounded-lg focus:outline-0">
         <img src={settingIcon} />
         <p>Units</p>
         <img src={dropdownIcon} />
       </DropdownMenuTrigger>
       <DropdownMenuContent
-        className="w-auto p-2 bg-card-bg border-Neutral-600"
+        className="w-auto lg:p-2 bg-card-bg border-Neutral-600"
         align="end"
       >
         <DropdownMenuLabel>Switch to Imperial</DropdownMenuLabel>
