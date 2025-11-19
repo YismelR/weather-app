@@ -27,10 +27,10 @@ export default function UnitsSwitch() {
   }
   return (
     <DropdownMenu>
-      <DropdownMenuTrigger className=" flex lg:gap-2 lg:px-3 lg:py-2 bg-card-bg rounded-lg focus:outline-0">
-        <img src={settingIcon} />
-        <p>Units</p>
-        <img src={dropdownIcon} />
+      <DropdownMenuTrigger className=" flex gap-1 px-2 py-1 rounded-sm lg:gap-2 lg:px-3 lg:py-2 bg-card-bg lg:rounded-lg focus:outline-0">
+        <img src={settingIcon} className="size-3 lg:size-4" />
+        <p className="text-xs lg:text-base">Units</p>
+        <img src={dropdownIcon} className="size-2 lg:size-4" />
       </DropdownMenuTrigger>
       <DropdownMenuContent
         className="w-auto lg:p-2 bg-card-bg border-Neutral-600"
