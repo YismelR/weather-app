@@ -4,7 +4,7 @@ import { hourlyCards } from "@/data/hourlyCards";
 export default function HourlyCards() {
   return (
     <ScrollArea className="h-11/12 md:h-10/12 lg:h-11/12 w-full ">
-      <div className="flex flex-col gap-3 md:gap-4 overflow-scroll">
+      <div className="flex flex-col gap-3 md:gap-4 overflow-hidden">
         {hourlyCards.map((hourly, idx) => (
           <div
             key={idx}
