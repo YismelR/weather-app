@@ -3,17 +3,17 @@ import { hourlyCards } from "@/data/hourlyCards";
 
 export default function HourlyCards() {
   return (
-    <ScrollArea className="h-11/12 w-full  ">
-      <div className="flex flex-col lg:gap-4 overflow-hidden">
+    <ScrollArea className="h-11/12 md:h-10/12 lg:h-11/12 w-full ">
+      <div className="flex flex-col gap-3 md:gap-4 overflow-scroll">
         {hourlyCards.map((hourly, idx) => (
           <div
             key={idx}
-            className="flex place-items-center justify-between bg-Neutral-700 lg:py-2 lg:px-3 rounded-lg border border-Neutral-600"
+            className="flex place-items-center justify-between bg-Neutral-700 p py-1 px-2 md:py-2 md:px-3 rounded-lg border border-Neutral-600"
           >
             <div className="flex place-items-center">
               <img
                 src={hourly.image.url}
-                className="lg:size-8
+                className="size-8
               "
               />
               <p className="text-sm">{hourly.time} PM</p>

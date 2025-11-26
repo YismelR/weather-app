@@ -46,4 +46,49 @@ export const hourlyCards = [
     time: 3,
     temperature: 68,
   },
+  {
+    image: { url: cloudy },
+    time: 3,
+    temperature: 68,
+  },
+  {
+    image: { url: cloudy },
+    time: 3,
+    temperature: 68,
+  },
+  {
+    image: { url: cloudy },
+    time: 3,
+    temperature: 68,
+  },
+  {
+    image: { url: cloudy },
+    time: 3,
+    temperature: 68,
+  },
+  {
+    image: { url: cloudy },
+    time: 3,
+    temperature: 68,
+  },
+  {
+    image: { url: cloudy },
+    time: 3,
+    temperature: 68,
+  },
+  {
+    image: { url: cloudy },
+    time: 3,
+    temperature: 68,
+  },
+  {
+    image: { url: cloudy },
+    time: 3,
+    temperature: 68,
+  },
+  {
+    image: { url: cloudy },
+    time: 3,
+    temperature: 68,
+  },
 ];
